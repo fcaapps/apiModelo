@@ -24,6 +24,6 @@ router.register(r'modelo', ModelosViewSet)
 
 urlpatterns = [
     url(r'^api-token-auth/', views.obtain_auth_token),
-    url(r'^apis/',include(router.urls)),
+    url(r'^',include(router.urls)),
     url(r'^admin/', admin.site.urls)
 ]
