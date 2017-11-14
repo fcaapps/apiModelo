@@ -27,15 +27,6 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['example.com','localhost','127.0.0.1', 'apimodelo.herokuapp.com']
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'glinc+&y^06w^o^y2i0h_mi1xu)cy)ans^2jy5h$)#14f)0h3!'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
-
 # Application definition
 
 INSTALLED_APPS = [
