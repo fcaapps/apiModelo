@@ -16,11 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from rest_framework import routers
-from apis.views import ProdutosViewSet
+from apis.views import ModelosViewSet
 from rest_framework.authtoken import views
 
 router = routers.DefaultRouter()
-router.register(r'produto', ProdutosViewSet)
+router.register(r'modelo', ModelosViewSet)
 
 urlpatterns = [
     url(r'^api-token-auth/', views.obtain_auth_token),

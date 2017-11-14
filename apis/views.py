@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from .models import Produtos
+from .models import Modelos
 from rest_framework import viewsets
-from .Serializers import ProdutoSerializer
+from .Serializers import ModelosSerializer
 from django.contrib.auth.models import User
 
-class ProdutosViewSet(viewsets.ModelViewSet):
-    queryset = Produtos.objects.all().order_by('-created')
-    serializer_class = ProdutoSerializer
+class ModelosViewSet(viewsets.ModelViewSet):
+    queryset = Modelos.objects.all().order_by('-created')
+    serializer_class = ModelosSerializer
